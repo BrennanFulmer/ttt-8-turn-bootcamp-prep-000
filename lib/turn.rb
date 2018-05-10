@@ -7,6 +7,7 @@ def display_board(board)
 end
 
 def turn(board)
+  
 end
 
 def input_to_index(num)
