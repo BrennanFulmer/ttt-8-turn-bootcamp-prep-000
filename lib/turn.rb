@@ -13,7 +13,7 @@ def turn(board)
   if valid_move?(board, input)
     
   else
-    
+    turn(board)
   end
 end
 
