@@ -18,6 +18,11 @@ def valid_move?(board, index)
   end
 end
 
+def move(board, index, player="X")
+  board[index] = player
+  board
+end
+
 def position_taken?(board, index)
   case board[index].to_s.strip
   when "X" || "O"
@@ -29,7 +34,3 @@ end
 
 
 
-def move(board, index, player="X")
-  board[index] = player
-  board
-end
