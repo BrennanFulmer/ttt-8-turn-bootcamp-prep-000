@@ -17,7 +17,7 @@ def turn(board)
   end
 end
 
-def input_to_index(num)
+def input_to_index(input)
   num.to_i - 1
 end
 
