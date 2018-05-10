@@ -18,7 +18,7 @@ def turn(board)
 end
 
 def input_to_index(input)
-  num.to_i - 1
+  input.to_i - 1
 end
 
 def position_taken?(board, index)
