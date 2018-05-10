@@ -11,8 +11,6 @@ def position_taken?(board, index)
   case board[index].to_s.strip
   when "X" || "O"
     true
-  when "O"
-    true
   else
     false
   end
