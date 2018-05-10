@@ -10,6 +10,15 @@ def input_to_index(num)
   num.to_i - 1
 end
 
+def position_taken?(board, index)
+  case board[index].to_s.strip
+  when "X" || "O"
+    false
+  else
+    true
+  end
+end
+
 def valid_move?(board, index)
   if index.between?(0, 8) && position_taken?(board, index)
     true
@@ -23,14 +32,7 @@ def move(board, index, player="X")
   board
 end
 
-def position_taken?(board, index)
-  case board[index].to_s.strip
-  when "X" || "O"
-    false
-  else
-    true
-  end
-end
+
 
 
 
